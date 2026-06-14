@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.header {
+  background-color: #005f73;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  background-image: url('assets/logo.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #0a9396;
+}
+.menu-btn {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background 0.3s;
+}
+.menu-btn:hover {
+  background-color: #94d2bd;
+}
+main {
+  padding: 20px;
+}
+.section {
+  display: none;
+}
+.section.active {
+  display: block;
+}
+#resultDoc, #resultCert, #scanResult {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #008891;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005f73;
+}
+#pdfModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  color: #000;
+}
