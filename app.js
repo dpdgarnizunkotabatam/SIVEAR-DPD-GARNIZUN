@@ -14,7 +14,7 @@ function searchDocument() {
     alert('Masukkan nomor dokumen');
     return;
   }
-  fetch(`https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?type=doc&nomor=${no}`)
+  fetch(`https://script.google.com/macros/s/AKfycbyNwlMe3xxSAIlVK1PdCPWoizI4uDCmtdTILB7ovw6oeVvZbPCorL58_EwOPFaRNX8j/exec?type=doc&nomor=${no}`)
     .then(res => res.json())
     .then(data => {
       const resDiv = document.getElementById('resultDoc');
@@ -32,7 +32,7 @@ function searchCertificate() {
     alert('Masukkan nomor e-Sertifikat');
     return;
   }
-  fetch(`https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?type=cert&nomor=${no}`)
+  fetch(`https://script.google.com/macros/s/AKfycbyNwlMe3xxSAIlVK1PdCPWoizI4uDCmtdTILB7ovw6oeVvZbPCorL58_EwOPFaRNX8j/exec?type=cert&nomor=${no}`)
     .then(res => res.json())
     .then(data => {
       const resDiv = document.getElementById('resultCert');
@@ -86,7 +86,7 @@ function startScan() {
 }
 
 function verifyTTD(kode) {
-  fetch(`https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?type=ttd&kode=${kode}`)
+  fetch(`https://script.google.com/macros/s/AKfycbyNwlMe3xxSAIlVK1PdCPWoizI4uDCmtdTILB7ovw6oeVvZbPCorL58_EwOPFaRNX8j/exec?type=ttd&kode=${kode}`)
     .then(res => res.json())
     .then(data => {
       if (data.valid) {
