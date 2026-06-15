@@ -56,11 +56,11 @@ function closeModal() {
 
 // Download kartu anggota
 function downloadKartu() {
-  // Bisa diisi URL kartu anggota
+  // Ganti URL sesuai lokasi file kartu anggota
   window.open('https://link-ke-kartu-anggota.pdf', '_blank');
 }
 
-// Scan tanda tangan
+// Scan tanda tangan menggunakan ZXing
 let selectedDeviceId = null;
 let codeReader = null;
 
@@ -91,9 +91,18 @@ function verifyTTD(kode) {
     .then(data => {
       if (data.valid) {
         alert(`Tanda tangan terverifikasi atas nama: ${data.nama}`);
-        // Bisa menampilkan dokumen TTD di sini
+        // Tambahkan fitur menampilkan dokumen TTD jika diperlukan
       } else {
         alert('Tanda tangan tidak terverifikasi');
       }
     });
+}
+
+// Pendaftaran Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('Service Worker terdaftar:', reg))
+      .catch(error => console.log('Gagal mendaftar Service Worker:', error));
+  });
 }
