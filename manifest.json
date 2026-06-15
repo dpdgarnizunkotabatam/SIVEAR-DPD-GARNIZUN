@@ -1,0 +1,20 @@
+{
+  "background_color": "#ffffff",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "dpdgarnizunkotabatam.github",
+  "orientation": "any",
+  "scope": " https://dpdgarnizunkotabatam.github.io/SIVEAR-DPD-GARNIZUN/",
+  "short_name": "dpdgarnizunkotabatam.github",
+  "start_url": " https://dpdgarnizunkotabatam.github.io/SIVEAR-DPD-GARNIZUN/",
+  "theme_color": "#3367d6",
+  "id": "SIVEARDPDGARNIZUN",
+  "description": "SIVEAR GARNIZUN BATAM hadir sebagai inovasi mutakhir yang dirancang untuk menjamin keaslian dan validitas berbagai dokumen serta identitas digital. Didukung oleh teknologi kode QR dan sistem autentikasi terintegrasi, fitur ini memungkinkan pengguna memverifikasi keabsahan berbagai instrumen penting—mulai dari surat kedinasan, e-sertifikat, hingga kartu anggota—secara presisi, cepat, dan efisien.",
+  "lang": "id",
+  "categories": [
+    "developer"
+  ],
+  "display_override": [
+    "window-controls-overlay"
+  ]
+}
